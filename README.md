@@ -1,3 +1,3 @@
 # SurveyInHTML
-Only HTML simple project
+HTML simple project
 Employee Interests Survey with submit button redirects to another page
