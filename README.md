@@ -15,3 +15,4 @@ Topics covered:
     e. display: flex
     f. background
     g. text: font, styling, types
+    h. transitions: :hover
