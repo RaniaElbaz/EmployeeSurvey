@@ -3,74 +3,78 @@
 
 	<head>
 		<meta charset="UTF-8"/>
-		<title> Employee Interests Survey </title>
-		<link rel="icon" href="icon.png">
+		<title> Employee Survey </title>
 		<base href="images/"/>
+		<link rel="icon" href="icon.png">
+		<link rel="stylesheet" href="../style.css">
 	</head>
 	
-	<body bgcolor="#517994">
-		<h1 align="center"> 
-			<font color="white" face="Times New Roman">
-				Employee Interests Survey Form 
-			</font>
-		</h1>
-		<br><br><br><br><br>
-		<form method="post" action="../page2.html">
-			<div align="center">
-				<font color="white" size="4" face="Times New Roman">
-				
-					Enter your name 
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<input type="text" name="name">
-			
-				<br/><br/>
-					
-					Enter your department
-				&nbsp;
-				<input type="text" name="department">
+	<body>
+		<div class="container">
+			<h1> 
+				Hobbies Survey Form 
+			</h1>
 		
-				<br/><br/>
-	
-					Tell us about yourself
-				<br/>
-				<textarea cols="50" rows="5" name="comment"></textarea>
-			
-				<br/><br/>
+			<form method="post" action="https://cat-bounce.com">
+				<div class="formgroup">
+					<label for="name" > Name </label>
+					<input type="text" class="form-input" name="name" placeholder="Enter your name" required>
+				</div>
+					
+				<div class="formgroup">	
+					<label for="department"> Department </label>
+					<input type="text" class="form-input" name="department" placeholder="Enter your department" required>
+				</div>
 				
-					Do you exercise at home?
-				<font color="black">
-				<input type="radio" name="exercise"> Yes
-				<input type="radio" name="exercise"> No
-				</font>
+				<div class="formgroup">
+					<label for="comment"> Tell us about yourself <span> (optional)</span> </label>
+					<textarea cols="50" rows="5" name="comment" class="commentarea"></textarea>
+				</div>
 				
-				<br/><br/>
+				<div class="formgroup">
+					<p> Do you exercise at home? </p> 
+					<label>
+						<input type="radio" class="input-radio" name="exercise" value="yes" required>
+						Yes
+					</label>
+					<label>
+						<input type="radio" class="input-radio" name="exercise" value="no">
+						No
+					</label>
+				</div>
 				
-					How do you like to read about your favorite topics?
-				<br/>
-				<font color="black">
-				<input type="checkbox" name="books"> Books
-				<input type="checkbox" name="olsrc"> Online resources
-				<input type="checkbox" name="mags"> Magazines
-				</font>
+				<div class="formgroup">
+					<p> How do you like to read about your favorite topics? </p>
+					<label>
+						<input type="checkbox" class="input-checkbox" name="favtopic" value="books"> 
+						Books
+					</label>
+					<label>
+						<input type="checkbox" class="input-checkbox" name="favtopic" value="online resources"> 
+						Online resources
+					</label>
+					<label>
+						<input type="checkbox" class="input-checkbox" name="favtopic" value="magazines"> 
+						Magazines
+					</label>
+				</div>
 				
-				<br/><br/>
+				<div class="formgroup">
+					<p>	What genre of movies do you like? </p>
+					<select class="form-input" name="movies" required>
+						<option disabled selected value> Select a genre </option>
+						<option> comedy </option>
+						<option> romantic </option>
+						<option> horror </option>
+						<option> sci-fi </option>
+						<option> thriller </option>
+					</select> 
+				</div>	
 				
-					What genre of movies do you like?
-				<select>
-					<option> comedy </option>
-					<option> romantic </option>
-					<option> horror </option>
-					<option> sci-fi </option>
-					<option> thriller </option>
-				</select>
-				
-				<br/><br/>
-				
-				<input type="image" src="subutton.gif" name="submit" width="100" alt="susbmit">
-				
-				</font>
-			</div>
-		</form>
+				<input type="image" src="submit.png" class="submit" name="submit" width="100" alt="submit">
+			</form>
+		</div>
+		
 	</body>
 
 </html>
